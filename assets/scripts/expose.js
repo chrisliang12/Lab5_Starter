@@ -35,6 +35,8 @@ function init() {
   // play the sound when click the button
   btn.addEventListener('click', () => {
     audio.play();
-    jsConfetti.addConfetti();
+    if (menu.value === "party-horn") {
+      jsConfetti.addConfetti();
+    }
   });
 }
