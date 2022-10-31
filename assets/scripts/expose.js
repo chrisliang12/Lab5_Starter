@@ -20,6 +20,7 @@ function init() {
   // change the icon based on the volume level
   volume.addEventListener('change', () => {
     //console.log(typeof(volume.value));
+    audio.volume = Number(volume.value/100);
     if (volume.value == 0) {
       icon.setAttribute('src', "assets/icons/volume-level-0.svg");
     } else if (volume.value >= 1 && volume.value < 33) {
