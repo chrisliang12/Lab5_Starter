@@ -15,7 +15,6 @@ function init() {
   menu.addEventListener('change', () => {
     hornImg.setAttribute("src", `/assets/images/${menu.value}.svg`);
     audio.setAttribute("src", `/assets/audio/${menu.value}.mp3`);
-    console.log(menu.value);
   });
 
   // change the icon based on the volume level
