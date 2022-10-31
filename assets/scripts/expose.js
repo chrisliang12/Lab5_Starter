@@ -13,8 +13,8 @@ function init() {
 
   // change the img based on user input on menu
   menu.addEventListener('change', () => {
-    hornImg.setAttribute("src", `assets/images/${menu.value}.svg`);
-    audio.setAttribute("src", `assets/audio/${menu.value}.mp3`);
+    hornImg.setAttribute('src', "assets/images/" + `${menu.value}` + ".svg");
+    audio.setAttribute('src', "assets/audio/" + `${menu.value}` + ".mp3");
   });
 
   // change the icon based on the volume level
